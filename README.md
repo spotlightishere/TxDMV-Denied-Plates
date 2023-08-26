@@ -1,22 +1,7 @@
 # TxDMV Denied Plates
 This repository contains 14,599 denied license plates from [TxDMV](https://www.txdmv.gov). Their denial reasons are not given, but should be interpreted per the [reason codes](#reason-codes).
 
-## Backstory
-The repositories [ca-license-plates](https://github.com/veltman/ca-license-plates) (and its subsequent [updated version](https://github.com/21five/ca-license-plates)) are datasets containing information about specialty plates flagged for review with quite a lot of... interesting review commentary. At the time, a [popular Twitter bot](https://botsin.space/@ca_dmv_bot) was posting absurd requests and decisions.
-
-I was curious if Texas had similar information. On January 3rd, 2023, I sent in a FOIA request requesting approved and denied specialty plates - alongside any commentary - through the time period of January 1st, 2021 to December 31st, 2022. As Texas allows you to have three possible choices, I additionally asked for such to be included.
-
-On January 18th, 2023, a surprisingly fast response was received, informing:
-1. Texas cannot give out information about issued specialty license plates per the [DPPA](https://en.wikipedia.org/wiki/Driver's_Privacy_Protection_Act).
-2. A lot of these applications are processed at a county level, so the state-level agency never sees any possible choices beyond what was denied.
-3. There's no commentary recorded for declined plates - instead, reason codes are given.
-4. It'd cost a small fortune to run a "custom query" to associate the denial reason codes with the actual plates.
-
-:(
-
-However, it was insisted that many license plates are self explanatory per the [reason codes](#reason-codes). On January 18th, 2023, slightly annoyed, I wrote back saying that the PDFs of only denied license plates would be acceptable.
-
-On August 25, 2023, TxDMV reached out with the PDFs, citing a growing backlog for the delay. I'm just amazed they got back to me.
+I reached out about this information on January 3rd, 2023. On August 25, 2023, TxDMV reached out with the PDFs, citing a growing backlog for the delay. I'm just amazed they got back to me.
 
 ## Reason Codes
 As defined in [Title 43, part 10, chapter 217, subchapter B, rule 217.27 ("Vehicle Registration Insignia")](https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=43&pt=10&ch=217&rl=27), specialty license plates may be rejected if:
