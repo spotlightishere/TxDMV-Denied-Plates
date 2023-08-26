@@ -1,13 +1,16 @@
 # TxDMV Denied Plates
+This repository contains 14,599 denied license plates from [TxDMV](https://www.txdmv.gov). Their denial reasons are not given, but should be interpreted per the [reason codes](#reason-codes).
+
+## Backstory
 The repositories [ca-license-plates](https://github.com/veltman/ca-license-plates) (and its subsequent [updated version](https://github.com/21five/ca-license-plates)) are datasets containing information about specialty plates flagged for review with quite a lot of... interesting review commentary. At the time, a [popular Twitter bot](https://botsin.space/@ca_dmv_bot) was posting absurd requests and decisions.
 
-I was curious if Texas had similar information, so on January 3rd, 2023, I sent in a FOIA request to [TxDMV](https://www.txdmv.gov). In it, I requested approved and denied specialty plates - alongside any commentary - through the time period of January 1st, 2021 to December 31st, 2022. As Texas allows you to have three possible choices, I additionally asked for such to be included.
+I was curious if Texas had similar information. On January 3rd, 2023, I sent in a FOIA request requesting approved and denied specialty plates - alongside any commentary - through the time period of January 1st, 2021 to December 31st, 2022. As Texas allows you to have three possible choices, I additionally asked for such to be included.
 
 On January 18th, 2023, a surprisingly fast response was received, informing:
-1. Texas cannot give out information about issued specialty license plates per the [DPPA](https://en.wikipedia.org/wiki/Driver's_Privacy_Protection_Act). :(
-2. A lot of these applications are processed at a county level, so the state-level agency never sees possible choices. :(
-3. There's no commentary recorded for declined plates - instead, reason codes are given. :(
-4. It'd cost a small fortune to run a "custom query" to associate the denial reason codes with the actual plates. :(
+1. Texas cannot give out information about issued specialty license plates per the [DPPA](https://en.wikipedia.org/wiki/Driver's_Privacy_Protection_Act).
+2. A lot of these applications are processed at a county level, so the state-level agency never sees any possible choices beyond what was denied.
+3. There's no commentary recorded for declined plates - instead, reason codes are given.
+4. It'd cost a small fortune to run a "custom query" to associate the denial reason codes with the actual plates.
 
 :(
 
@@ -49,6 +52,12 @@ A few custom steps were applied within Power Query to all tables:
 - In order to accommodate only the left-hand side of the page,the "Month" column was dropped.
 - In some circumstances, "Column 3" was created due to erroneous handling of certain license plates containing spaces. This column was merged with "Plate Selection" using a space as a separator.
 - The total amount of license plate numbers present at the end of "Plate Selection" were manually removed (i.e. where Request Date was null).
+
+## License
+From my understanding, this is public domain information. I'm most certainly not a lawyer. Good luck!
+
+## Usages
+- "funny texas denied license plates" on Telegram: [@funnytexasdeniedlicenseplates](https://t.me/funnytexasdeniedlicenseplates)
 
 # Conclusions
 - Although my high-end gaming rig can handle Cyberpunk 2077 at highest graphics and build LLVM in about 20 minutes, it could not handle the full wrath of Excel.
